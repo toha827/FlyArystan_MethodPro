@@ -2,4 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="e_mail">E-mail</string>
     <string name="fly_arystan">FLY ARYSTAN</string>
+    <string name="password">password</string>
+    <string name="log_in">log_in</string>
+    <string name="sign_in">sign_in</string>
 </resources>
