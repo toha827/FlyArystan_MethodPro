@@ -21,6 +21,7 @@
         <activity android:name=".ServicesActivity"></activity>
         <activity android:name=".FlightStatusActivity"></activity>
         <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ChooseCityActivity"></activity>
     </application>
 
 </manifest>

@@ -10,8 +10,13 @@
     <ListView
             android:id="@+id/listView_1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
     ></ListView>
+    <TextView
+            android:id="@+id/city"
+            app:layout_constraintTop_toBottomOf="@id/listView_1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent" android:layout_height="500dp"/>
 </android.support.constraint.ConstraintLayout>

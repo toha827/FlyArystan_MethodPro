@@ -9,21 +9,32 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.ArrayAdapter
 import android.widget.ListView
-import com.example.myinstagram.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import com.example.myapplication.CheckInActivity.*
 
 class ChooseCityActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val arr = arrayOf("Oral", "Nursultan", "Almaty", "Shymkent", "Pavlodar", "Karagandy")
         val TAG = "ChooseCityActivity"
+        val btn = intent.getStringExtra("Btn")
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.ChooseCity)
+        setContentView(R.layout.choose_city)
 
         Log.e(TAG,"")
 
-        val adapter = ArrayAdapter(this,R.layout.abc_activity_chooser_view_list_item,arr)
-        val listView: ListView = findViewById(R.id.listView_1)
-        listView.setAdapter(adapter)
+        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,arr)
+        val listView: ListView = this.findViewById(R.id.listView_1)
+        listView.adapter = adapter
+
+        listView.setOnItemClickListener { parent, view, position, id ->
+            val selectedItem = parent.getItemAtPosition(position) as String
+            print(selectedItem)
+            intent = Intent(this,CheckInActivity::class.java)
+            intent.putExtra("City",selectedItem)
+            intent.putExtra("Btn",btn)
+            startActivity(intent)
+
+        }
     }
 }
