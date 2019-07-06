@@ -26,15 +26,31 @@ class ChooseCityActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,arr)
         val listView: ListView = this.findViewById(R.id.listView_1)
         listView.adapter = adapter
-
         listView.setOnItemClickListener { parent, view, position, id ->
             val selectedItem = parent.getItemAtPosition(position) as String
             print(selectedItem)
+
+            val Chooise1 = intent.getStringExtra("FirstChooise")
+            val Chooise2 = intent.getStringExtra("SecondChooise")
+
             intent = Intent(this,CheckInActivity::class.java)
             intent.putExtra("City",selectedItem)
+            if(Chooise1 != null){
+                intent.putExtra("FirstChooise",Chooise1)
+            }
+            if( Chooise2 != null){
+                intent.putExtra("SecondChooise",Chooise2)
+
+            }
+            if(btn == "From"){
+                intent.putExtra("FirstChooise","True")
+
+            }
+            else if(btn == "To"){
+                intent.putExtra("SecondChooise","True")
+            }
             intent.putExtra("Btn",btn)
             startActivity(intent)
-
         }
     }
 }
