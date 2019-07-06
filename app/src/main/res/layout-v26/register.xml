@@ -7,8 +7,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp">
+            >
 
         <ImageView
                 android:id="@+id/imageView2"
@@ -38,7 +37,7 @@
                 android:layout_marginLeft="40sp"
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="40sp"
-                android:background="@drawable/MAIN_page_banner_DMB_RU_"
+                android:background="@drawable/qq"
                 android:ems="10"
                 android:hint="@string/e_mail"
                 android:inputType="textEmailAddress"
@@ -57,7 +56,6 @@
                 android:autofillHints=""
                 android:background="@drawable/fields"
                 android:ems="10"
-                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="15sp" />
 
@@ -66,13 +64,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button"
-                android:text="@string/log_in" />
+                android:text="@string/log_in"
+        />
 
         <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_in" />
+                android:text="@string/sign_in"
+        />
 
     </LinearLayout>
 
