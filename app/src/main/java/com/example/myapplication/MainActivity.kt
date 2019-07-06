@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             ic_logo.startAnimation(AnimationUtils.loadAnimation(this, R.anim.splash_out))
             Handler().postDelayed({
                 ic_logo.visibility = View.GONE
-                startActivity(Intent(this,HomeActivity::class.java))
+                startActivity(Intent(this,AuthActivity::class.java))
                 finish()
             },500)
         },1500)
