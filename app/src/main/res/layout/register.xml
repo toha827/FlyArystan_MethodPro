@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/MAIN_page_banner_DMB_RU_"
+           >
+
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:paddingTop="10sp"
+                android:paddingRight="50sp"
+                android:paddingBottom="10sp"
+        />
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="FLY ARYSTAN"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="40sp"
+                android:background="@drawable/fields"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:padding="15sp"
+
+                android:textColor="@color/colorPrimary" />
+
+        <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="40sp"
+                android:layout_marginBottom="20sp"
+                android:autofillHints=""
+                android:background="@drawable/fields"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:padding="15sp" />
+
+        <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="log_in" />
+
+        <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="sign_in" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
