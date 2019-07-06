@@ -10,12 +10,12 @@ import android.view.animation.AnimationUtils
 import com.example.myinstagram.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class HomeActivity : BaseActivity(0) {
+class ServicesActivity : BaseActivity(2) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val TAG = "HomeActivity"
+        val TAG = "ServicesActivity"
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_services)
         setupBottomNavigation()
         Log.e(TAG,"")
     }
