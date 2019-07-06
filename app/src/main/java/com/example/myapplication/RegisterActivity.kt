@@ -8,7 +8,7 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
-class HomeActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
             ic_logo.startAnimation(AnimationUtils.loadAnimation(this, R.anim.splash_out))
             Handler().postDelayed({
                 ic_logo.visibility = View.GONE
-                startActivity(Intent(this,HomeActivity::class.java))
+                startActivity(Intent(this,RegisterActivity::class.java))
                 finish()
             },500)
         },1500)
