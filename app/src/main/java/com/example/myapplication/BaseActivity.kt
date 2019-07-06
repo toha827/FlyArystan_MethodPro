@@ -20,7 +20,6 @@ abstract class BaseActivity(val navNumber : Int) : AppCompatActivity() {
 
             val nextActivity =
                 when(it.itemId){
-                    R.id.nav_item_home -> HomeActivity::class.java
                     R.id.nav_item_checkIn -> CheckInActivity::class.java
                     R.id.nav_services -> ServicesActivity::class.java
                     R.id.nav_flight -> FlightStatusActivity::class.java

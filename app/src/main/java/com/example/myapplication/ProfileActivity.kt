@@ -10,7 +10,7 @@ import android.view.animation.AnimationUtils
 import com.example.myinstagram.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class ProfileActivity : BaseActivity(4) {
+class ProfileActivity : BaseActivity(3) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val TAG = "ProfileActivity"

@@ -12,7 +12,7 @@ import com.example.myinstagram.BaseActivity
 import kotlinx.android.synthetic.main.activity_check_in.*
 import kotlinx.android.synthetic.main.activity_main.*
 
-public class CheckInActivity : BaseActivity(1) {
+public class CheckInActivity : BaseActivity(0) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         var FirstChoosed = false
