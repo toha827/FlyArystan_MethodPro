@@ -48,5 +48,17 @@ class AuthActivity : AppCompatActivity() {
             intent = Intent(this,RegisterActivity::class.java)
             startActivity(intent)
         }
+
+
+        ic_logo.startAnimation(AnimationUtils.loadAnimation(this,R.anim.splash_in))
+
+        Handler().postDelayed({
+            ic_logo.startAnimation(AnimationUtils.loadAnimation(this, R.anim.splash_out))
+            Handler().postDelayed({
+                ic_logo.visibility = View.GONE
+                startActivity(Intent(this,AuthActivity::class.java))
+                finish()
+            },500)
+        },1500)
     }
 }
