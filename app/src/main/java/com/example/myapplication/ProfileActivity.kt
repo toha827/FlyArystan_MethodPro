@@ -7,16 +7,14 @@ import android.os.Handler
 import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
-import com.example.myinstagram.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class HomeActivity : BaseActivity(0) {
+class ProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val TAG = "HomeActivity"
+        val TAG = "ProfileActivity"
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
-        setupBottomNavigation()
+        setContentView(R.layout.activity_profile)
         Log.e(TAG,"")
     }
 }

@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".CheckInActivity"></activity>
+        <activity android:name=".ServicesActivity"></activity>
+        <activity android:name=".FlightStatusActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
