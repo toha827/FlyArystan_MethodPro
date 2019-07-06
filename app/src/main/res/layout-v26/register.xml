@@ -37,7 +37,7 @@
                 android:layout_marginLeft="40sp"
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="40sp"
-                android:background=""
+                android:background="@drawable/qq"
                 android:ems="10"
                 android:hint="@string/e_mail"
                 android:inputType="textEmailAddress"
