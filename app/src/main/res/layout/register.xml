@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button"
-                android:backgroundTint="@color/colorAccent"
+                android:backgroundTint="@color/Btn1"
                 android:layout_marginLeft="90sp"
                 android:layout_marginRight="90sp"
                 android:text="log_in" />
@@ -85,7 +85,7 @@
                    android:layout_width="150dp"
                    android:layout_height="50dp"
                    android:background="@drawable/button"
-                   android:backgroundTint="@color/colorPrimary"
+                   android:backgroundTint="@color/btn2"
                    android:layout_marginLeft="40dp"
                    app:layout_constraintStart_toStartOf="parent"
                    app:layout_constraintTop_toTopOf="parent"
