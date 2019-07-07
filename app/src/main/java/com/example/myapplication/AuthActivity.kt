@@ -13,11 +13,12 @@ class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.auth_activity)
 
         sign_in_btn.setOnClickListener {
             val Login = email_input.text.toString()
             
         }
+            
     }
 }
