@@ -9,7 +9,7 @@ import android.view.animation.AnimationUtils
 import com.example.myinstagram.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class FlightStatusActivity : BaseActivity(3) {
+class FlightStatusActivity : BaseActivity(2) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
