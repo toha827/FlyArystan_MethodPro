@@ -105,7 +105,7 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginLeft="50dp"
                 app:layout_constraintTop_toBottomOf="@+id/re_passwd_input"
-                android:background="@drawable/signbtn"
+
                 android:background="@drawable/sign_btn"
         />
 
@@ -115,7 +115,7 @@
                 android:text="Back"
                 android:layout_marginTop="30dp"
                 android:textSize="15dp"
-                android:textColor="@color/Blue"
+                android:textColor="@color/btn2"
                 app:layout_constraintTop_toBottomOf="@id/sign_up_btn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
