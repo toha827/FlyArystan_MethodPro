@@ -20,7 +20,7 @@ class AuthActivity : AppCompatActivity() {
         val TAG = "AuthActivity"
         auth = FirebaseAuth.getInstance()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.auth_activity)
+        setContentView(R.layout.activity_main)
 
         sign_in_btn.setOnClickListener {
             val Login = email_input.text.toString()
